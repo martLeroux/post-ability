@@ -1,0 +1,47 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+
+body, html {
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+}
+
+.section {
+  @extend .py-4;
+
+  &--dark {
+    h2, h5, p {
+      color: $white;
+    }
+
+    .text-muted {
+      color: rgba($white, 0.75) !important;
+    }
+  }
+}
+
+.img-circle {
+  background-color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+.about {
+  background: $light-green;
+}
+
+
+.who {
+  background: #2d2e2e;
+
+  .employee-pic {
+    display: block;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+  }
+}
+
