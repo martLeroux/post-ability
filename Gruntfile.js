@@ -15,7 +15,7 @@ module.exports = (grunt) => {
     pkg: grunt.file.readJSON('package.json'),
     develop: {
       server: {
-        file: 'bin/www'
+        file: 'www'
       }
     },
     sass: {
@@ -70,14 +70,14 @@ module.exports = (grunt) => {
     const done = this.async();
     setTimeout(() => {
       request.get('http://localhost:' + reloadPort + '/changed?files=' + files.join(','), (err, res) => {
-          const reloaded = !err && res.statusCode === 200;
-          if (reloaded) {
-            grunt.log.ok('Delayed live reload successful.');
-          } else {
-            grunt.log.error('Unable to make a delayed live reload.');
-          }
-          done(reloaded);
-        });
+        const reloaded = !err && res.statusCode === 200;
+        if (reloaded) {
+          grunt.log.ok('Delayed live reload successful.');
+        } else {
+          grunt.log.error('Unable to make a delayed live reload.');
+        }
+        done(reloaded);
+      });
     }, 500);
   });
 
