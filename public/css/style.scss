@@ -21,8 +21,10 @@ body, html {
   }
 }
 
+
+
 .img-circle {
-  background-color: #FFFFFF;
+  background-color: $white;
   margin-bottom: 0.5rem;
   padding: 0.25rem;
   border-radius: 50%;
@@ -30,6 +32,58 @@ body, html {
 
 .about {
   background: $light-green;
+}
+
+.services {
+  .fas {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: $light-green;
+  }
+
+  &__tiles {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background: $white;
+    color: $headings-color;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    border: 0;
+    transition: all 0.3s;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+    h3, p, .services__tilesLearnMore, .fas {
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      color: $body-text-hover;
+      background: rgba($white, 0.6);
+
+      h3, p {
+        color: $body-text-hover;
+      }
+
+      .fas {
+        color: #427C89;
+      }
+
+      .services__tilesLearnMore {
+        color: $info-hover;
+      }
+    }
+  }
+
+  &__tilesLearnMore {
+    color: $info;
+    margin-top: auto;
+
+    &:hover {
+      color: $info-hover;
+    }
+  }
 }
 
 
