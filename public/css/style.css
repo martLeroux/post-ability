@@ -54,7 +54,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #66615b;
   text-align: left;
   background-color: #fff; }
 
@@ -1128,7 +1128,7 @@ pre {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529; }
+  color: #66615b; }
   .table th,
   .table td {
     padding: 0.75rem;
@@ -1163,7 +1163,7 @@ pre {
   background-color: rgba(0, 0, 0, 0.05); }
 
 .table-hover tbody tr:hover {
-  color: #212529;
+  color: #66615b;
   background-color: rgba(0, 0, 0, 0.075); }
 
 .table-primary,
@@ -1459,7 +1459,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: #212529;
+  color: #66615b;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
@@ -1747,7 +1747,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #212529;
+  color: #66615b;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -1762,7 +1762,7 @@ textarea.form-control {
     .btn {
       transition: none; } }
   .btn:hover {
-    color: #212529;
+    color: #66615b;
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -2239,7 +2239,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #66615b;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3870,7 +3870,7 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
-    color: #212529;
+    color: #66615b;
     background-color: #e9ecef; }
 
 .list-group-item {
@@ -4226,19 +4226,19 @@ a.close.disabled {
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
-    opacity: 0.5; }
+    opacity: 0.25; }
 
 .modal-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
   .modal-header .close {
-    padding: 1rem 1rem;
-    margin: -1rem -1rem -1rem auto; }
+    padding: 1rem 2rem;
+    margin: -1rem -2rem -1rem auto; }
 
 .modal-title {
   margin-bottom: 0;
@@ -4247,14 +4247,14 @@ a.close.disabled {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem; }
+  padding: 2rem; }
 
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  padding: 0.75rem;
+  padding: 1.75rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px); }
@@ -4270,7 +4270,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 600px;
     margin: 1.75rem auto; }
   .modal-dialog-scrollable {
     max-height: calc(100% - 3.5rem); }
@@ -4497,7 +4497,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: #212529; }
+  color: #66615b; }
 
 .carousel {
   position: relative; }
@@ -7099,7 +7099,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #121416 !important; }
 
 .text-body {
-  color: #212529 !important; }
+  color: #66615b !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -7245,6 +7245,30 @@ body, html {
   margin-top: auto; }
   .services__tilesLearnMore:hover {
     color: #44a0b9; }
+
+.modal-content {
+  border-radius: 8px;
+  border: 0; }
+
+.modal-header {
+  display: flex;
+  align-items: center; }
+
+.modal-dialog .close {
+  opacity: 1 !important; }
+  .modal-dialog .close:not(:disabled):not(.disabled):hover, .modal-dialog .close:not(:disabled):not(.disabled):focus {
+    opacity: 1; }
+    .modal-dialog .close:not(:disabled):not(.disabled):hover .fa-times, .modal-dialog .close:not(:disabled):not(.disabled):focus .fa-times {
+      color: #427C89; }
+
+.modal-dialog .fa-times {
+  color: #7A9E9F; }
+
+.modal-content p {
+  margin-bottom: 1rem; }
+
+.modal-content h4:not(:first-child) {
+  margin-top: 1.5rem; }
 
 .who {
   background: #2d2e2e; }

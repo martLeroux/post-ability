@@ -67,7 +67,7 @@ body, html {
       }
 
       .fas {
-        color: #427C89;
+        color: $light-green-hover;
       }
 
       .services__tilesLearnMore {
@@ -86,6 +86,39 @@ body, html {
   }
 }
 
+.modal-content {
+  border-radius: 8px;
+  border: 0;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+
+.modal-dialog .close {
+  opacity: 1 !important;
+
+  &:not(:disabled):not(.disabled):hover, &:not(:disabled):not(.disabled):focus {
+    opacity: 1;
+
+    .fa-times {
+      color: $light-green-hover;
+    }
+  }
+}
+
+.modal-dialog .fa-times {
+  color: $light-green;
+}
+
+.modal-content p {
+  margin-bottom: 1rem;
+}
+
+.modal-content h4:not(:first-child) {
+  margin-top: 1.5rem;
+}
 
 .who {
   background: #2d2e2e;
