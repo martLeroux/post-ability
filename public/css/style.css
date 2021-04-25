@@ -7222,7 +7222,7 @@ a {
 .services .fas {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: #68B3C8; }
+  color: #7A9E9F; }
 
 .services__tiles {
   display: flex;
@@ -7244,7 +7244,7 @@ a {
     .services__tiles:hover h3, .services__tiles:hover p {
       color: #4b4743; }
     .services__tiles:hover .fas {
-      color: #3091B2; }
+      color: #427C89; }
     .services__tiles:hover .services__tilesLearnMore {
       color: #44a0b9; }
 

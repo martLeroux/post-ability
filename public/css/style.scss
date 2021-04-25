@@ -47,7 +47,7 @@ a{
   .fas {
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: #68B3C8;
+    color: $light-green;
   }
 
   &__tiles {
@@ -76,7 +76,7 @@ a{
       }
 
       .fas {
-        color: #3091B2;
+        color: $light-green-hover;
       }
 
       .services__tilesLearnMore {
