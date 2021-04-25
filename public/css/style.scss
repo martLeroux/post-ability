@@ -50,6 +50,15 @@ a{
     color: $light-green;
   }
 
+  &__tilesLearnMore {
+    color: $light-green;
+    margin-top: auto;
+
+    &:hover {
+      color: $info-hover;
+    }
+  }
+
   &__tiles {
     display: flex;
     flex-direction: column;
@@ -80,17 +89,8 @@ a{
       }
 
       .services__tilesLearnMore {
-        color: $info-hover;
+        color: $light-green-hover;
       }
-    }
-  }
-
-  &__tilesLearnMore {
-    color: $info;
-    margin-top: auto;
-
-    &:hover {
-      color: $info-hover;
     }
   }
 }

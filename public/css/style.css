@@ -7224,6 +7224,12 @@ a {
   margin-bottom: 1rem;
   color: #7A9E9F; }
 
+.services__tilesLearnMore {
+  color: #7A9E9F;
+  margin-top: auto; }
+  .services__tilesLearnMore:hover {
+    color: #44a0b9; }
+
 .services__tiles {
   display: flex;
   flex-direction: column;
@@ -7246,13 +7252,7 @@ a {
     .services__tiles:hover .fas {
       color: #427C89; }
     .services__tiles:hover .services__tilesLearnMore {
-      color: #44a0b9; }
-
-.services__tilesLearnMore {
-  color: #68B3C8;
-  margin-top: auto; }
-  .services__tilesLearnMore:hover {
-    color: #44a0b9; }
+      color: #427C89; }
 
 .modal-content {
   border-radius: 8px;
