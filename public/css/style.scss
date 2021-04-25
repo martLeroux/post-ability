@@ -48,11 +48,13 @@ a{
     font-size: 4rem;
     margin-bottom: 1rem;
     color: $light-green;
+
   }
 
   &__tilesLearnMore {
     color: $light-green;
     margin-top: auto;
+    text-decoration: underline;
 
     &:hover {
       color: $info-hover;
