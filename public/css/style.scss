@@ -131,6 +131,54 @@ a{
   margin-top: 1.5rem;
 }
 
+.faq {
+
+
+  .accordion {
+    box-shadow: $box-shadow;
+    border: 0;
+
+    .card {
+      border: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .card-header {
+      background: $white;
+      padding: 0;
+      border-bottom: 1px solid #ddd;
+
+      button {
+        width: 100%;
+        text-align: left;
+        padding: 0.75rem 1rem;
+        color: $body-color;
+        font-size: 1.25rem;
+        font-weight: 500;
+        transition: all 150ms linear;
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:hover, &:focus {
+          color: $body-text-hover;
+          text-decoration: none;
+
+          .fa-chevron-right {
+            color: $light-green-hover;
+          }
+        }
+      }
+
+      .fa-chevron-right {
+        color: $light-green;
+        transition: all 150ms linear;
+      }
+    }
+  } 
+}
+
 .who {
   background: $brow-bg;
 

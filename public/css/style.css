@@ -7279,6 +7279,35 @@ a {
 .modal-content h4:not(:first-child) {
   margin-top: 1.5rem; }
 
+.faq .accordion {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border: 0; }
+  .faq .accordion .card {
+    border: 0;
+    border-bottom: 1px solid #ddd; }
+  .faq .accordion .card-header {
+    background: #fff;
+    padding: 0;
+    border-bottom: 1px solid #ddd; }
+    .faq .accordion .card-header button {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      color: #66615b;
+      font-size: 1.25rem;
+      font-weight: 500;
+      transition: all 150ms linear; }
+      .faq .accordion .card-header button:focus {
+        box-shadow: none; }
+      .faq .accordion .card-header button:hover, .faq .accordion .card-header button:focus {
+        color: #4b4743;
+        text-decoration: none; }
+        .faq .accordion .card-header button:hover .fa-chevron-right, .faq .accordion .card-header button:focus .fa-chevron-right {
+          color: #427C89; }
+    .faq .accordion .card-header .fa-chevron-right {
+      color: #7A9E9F;
+      transition: all 150ms linear; }
+
 .who {
   background: #2d2e2e; }
   .who .employee-pic {
