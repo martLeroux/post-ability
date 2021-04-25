@@ -21,13 +21,22 @@ body, html {
   }
 }
 
-
+@include media-breakpoint-up(sm) { 
+  .navbar-expand-lg > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
 .img-circle {
   background-color: $white;
   margin-bottom: 0.5rem;
   padding: 0.25rem;
   border-radius: 50%;
+}
+
+a{
+  transition: all 150ms linear;
 }
 
 .about {
@@ -38,7 +47,7 @@ body, html {
   .fas {
     font-size: 4rem;
     margin-bottom: 1rem;
-    color: $light-green;
+    color: #68B3C8;
   }
 
   &__tiles {
@@ -67,7 +76,7 @@ body, html {
       }
 
       .fas {
-        color: $light-green-hover;
+        color: #3091B2;
       }
 
       .services__tilesLearnMore {
@@ -121,7 +130,7 @@ body, html {
 }
 
 .who {
-  background: #2d2e2e;
+  background: $brow-bg;
 
   .employee-pic {
     display: block;
@@ -129,6 +138,20 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     width: 10rem;
+  }
+}
+
+footer {
+  background: $brow-bg;
+  color: #777777;
+  padding: 1rem 0;
+
+  a {
+    color: #777777;
+
+    &:hover {
+      color: #E3E3E3;
+    }
   }
 }
 

@@ -7202,11 +7202,19 @@ body, html {
 .section--dark .text-muted {
   color: rgba(255, 255, 255, 0.75) !important; }
 
+@media (min-width: 576px) {
+  .navbar-expand-lg > .container {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
 .img-circle {
   background-color: #fff;
   margin-bottom: 0.5rem;
   padding: 0.25rem;
   border-radius: 50%; }
+
+a {
+  transition: all 150ms linear; }
 
 .about {
   background: #7A9E9F; }
@@ -7214,7 +7222,7 @@ body, html {
 .services .fas {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: #7A9E9F; }
+  color: #68B3C8; }
 
 .services__tiles {
   display: flex;
@@ -7236,7 +7244,7 @@ body, html {
     .services__tiles:hover h3, .services__tiles:hover p {
       color: #4b4743; }
     .services__tiles:hover .fas {
-      color: #427C89; }
+      color: #3091B2; }
     .services__tiles:hover .services__tilesLearnMore {
       color: #44a0b9; }
 
@@ -7278,3 +7286,12 @@ body, html {
     margin-left: auto;
     margin-right: auto;
     width: 10rem; }
+
+footer {
+  background: #2d2e2e;
+  color: #777777;
+  padding: 1rem 0; }
+  footer a {
+    color: #777777; }
+    footer a:hover {
+      color: #E3E3E3; }
