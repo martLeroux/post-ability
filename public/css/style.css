@@ -7306,7 +7306,9 @@ a {
           color: #427C89; }
     .faq .accordion .card-header .fa-chevron-right {
       color: #7A9E9F;
-      transition: all 150ms linear; }
+      transition: all 150ms linear;
+      margin-right: 0.5rem;
+      margin-top: 0.3125rem; }
 
 .who {
   background: #2d2e2e; }

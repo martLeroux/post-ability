@@ -2,7 +2,7 @@
   <a class="anchor" id="about"></a>
   <div class="container">
     <div class="row">
-      <div class="col-md-10">
+      <div class="col-lg-10">
         <h2>{{data.aboutTitle}}</h2>
         {{{aboutDescription}}}
       </div>
@@ -71,133 +71,145 @@
   <a class="anchor" id="faq"></a>
   <div class="container">
     <h2 class="mb-3">FAQ</h2>
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h5 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <i class="fas fa-chevron-right"></i> How long are appointments?
-            </button>
-          </h5>
-        </div>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link d-flex" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <i class="fas fa-chevron-right"></i>
+                  <div>How long are appointments?</div>
+                </button>
+              </h5>
+            </div>
 
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            Appointments are booked for 1 hour.
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                Appointments are booked for 1 hour.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-              aria-controls="collapseTwo">
-              <i class="fas fa-chevron-right"></i> What is the cost?
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Sessions are charged at $125 per hour.
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <i class="fas fa-chevron-right"></i>
+                  <div> What is the cost?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Sessions are charged at $125 per hour.
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-              aria-controls="collapseThree">
-              <i class="fas fa-chevron-right"></i> Are appointments held in person?
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-          <div class="card-body">
-            Not at this time. All appointments are conducted via the phone or Zoom.
-          </div>
-        </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <i class="fas fa-chevron-right"></i>
+                  <div>Are appointments held in person?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Not at this time. All appointments are conducted via the phone or Zoom.
+              </div>
+            </div>
 
 
-
-      </div>
-      <div class="card">
-        <div class="card-header" id="heading4">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
-              aria-controls="collapse4">
-              <i class="fas fa-chevron-right"></i> I’m going to be studying at a private institution. Does Post-Ability help me prepare for this type of
-              training?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-          <div class="card-body">
-            Private schools can have fewer established resources for students with disabilities. However, depending on the program and
-            area of study, there may be useful steps you can take to prepare for the program. We recommend you contact us
-            first to discuss if there are resources you can access at your school.
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="card">
-        <div class="card-header" id="heading5">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
-              aria-controls="collapse4">
-              <i class="fas fa-chevron-right"></i> When is the best time to start with Post-Ability?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
-          <div class="card-body">
-            Our services are designed to help students as they are getting ready to start a program. While you are welcome to contact
-            us at any time support, you can take full advantage of our services if you are able to have your first meeting
-            4 – 8 weeks prior to starting your training.
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="card">
-        <div class="card-header" id="heading6">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
-              aria-controls="collapse6">
-              <i class="fas fa-chevron-right"></i> Does Post-Ability provide career counselling?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse6" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
-          <div class="card-body">
-
-            No. However, there is a session that reviews disabilities and how accommodations can assist in the workplace and we’re happy
-            to refer you to other useful resources if you require such assistance.
 
           </div>
-        </div>
+          <div class="card">
+            <div class="card-header" id="heading4">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false"
+                  aria-controls="collapse4">
+                  <i class="fas fa-chevron-right"></i>
+                  <div>I’m going to be studying at a private institution.
+                    <br/>Does Post-Ability help me prepare for this type of training?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+              <div class="card-body">
+                Private schools can have fewer established resources for students with disabilities. However, depending on the program and
+                area of study, there may be useful steps you can take to prepare for the program. We recommend you contact
+                us first to discuss if there are resources you can access at your school.
+              </div>
+            </div>
 
 
 
-      </div>
-      <div class="card">
-        <div class="card-header" id="heading7">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
-              aria-controls="collapse7">
-              <i class="fas fa-chevron-right"></i> Does Post-Ability provide services in a group setting?
-            </button>
-          </h5>
-        </div>
-        <div id="collapse7" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
-          <div class="card-body">
-            Services for groups are possible and reviewed on a case-by-case basis to evaluate how best to serve the needs of the participants.
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false"
+                  aria-controls="collapse4">
+                  <i class="fas fa-chevron-right "></i>
+                  <div>When is the best time to start with Post-Ability?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+              <div class="card-body">
+                Our services are designed to help students as they are getting ready to start a program. While you are welcome to contact
+                us at any time support, you can take full advantage of our services if you are able to have your first meeting
+                4 – 8 weeks prior to starting your training.
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading6">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false"
+                  aria-controls="collapse6">
+                  <i class="fas fa-chevron-right"></i>
+                  <div>Does Post-Ability provide career counselling?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse6" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+              <div class="card-body">
+
+                No. However, there is a session that reviews disabilities and how accommodations can assist in the workplace and we’re happy
+                to refer you to other useful resources if you require such assistance.
+
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading7">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed d-flex" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false"
+                  aria-controls="collapse7">
+                  <i class="fas fa-chevron-right"></i>
+                  <div>Does Post-Ability provide services in a group setting?</div>
+                </button>
+              </h5>
+            </div>
+            <div id="collapse7" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+              <div class="card-body">
+                Services for groups are possible and reviewed on a case-by-case basis to evaluate how best to serve the needs of the participants.
+
+              </div>
+            </div>
 
           </div>
         </div>
-
 
 
       </div>
