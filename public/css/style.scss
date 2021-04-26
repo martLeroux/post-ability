@@ -44,7 +44,7 @@ a{
 }
 
 .header-section {
-  height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 3.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +61,7 @@ a{
     opacity: 0.25;
 
     @include media-breakpoint-up(lg) { 
+    min-height: calc(100vh - 4.5rem);
     background: url('../img/header-desktop.jpg');
     background-size: cover;
     background-position: center left;
