@@ -7221,10 +7221,14 @@ a {
 
 .header-section {
   min-height: calc(100vh - 3.5rem);
+  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media (min-width: 992px) {
+    .header-section {
+      min-height: calc(100vh - 4.5rem); } }
   .header-section:before {
     content: "";
     position: absolute;
@@ -7236,7 +7240,6 @@ a {
     opacity: 0.25; }
     @media (min-width: 992px) {
       .header-section:before {
-        min-height: calc(100vh - 4.5rem);
         background: url("../img/header-desktop.jpg");
         background-size: cover;
         background-position: center left; } }
