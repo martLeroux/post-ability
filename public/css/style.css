@@ -7219,9 +7219,11 @@ a {
 .navbar-brand {
   font-weight: 500; }
 
+.navbar-toggler {
+  border: 0; }
+
 .header-section {
   min-height: calc(100vh - 3.5rem);
-  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
