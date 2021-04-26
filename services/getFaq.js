@@ -1,11 +1,11 @@
 var client = require('./contentfulClient').client
 
-function getIndex() {
+function getFaq() {
   return client.getEntries({
-    'content_type': 'index'
+    'content_type': 'faq'
   })
 }
 
 module.exports = {
-  getIndex
+  getFaq
 }
