@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7 mx-auto mr-lg-0 text-center">
-        <h1 class="">{{data.headerTitle}}</h1>
+        <h1 class="">{{data.headerText}}</h1>
         <h4 class="mb-4">{{data.headerDescription}}</h4>
         <a href="#about" class="btn btn-primary btn-lg">{{data.headerCta}}</a>
       </div>
@@ -27,38 +27,23 @@
 <section class="section services">
   <a class="anchor" id="services"></a>
   <div class="container">
-    <h2 class="mb-3">Services</h2>
+    <h2 class="mb-3">{{data.servicesTitle}}</h2>
     <div class="row mb-1">
+      {{#each services}}
       <div class="col-md-4 mb-3">
-        <button class="services__tiles" data-toggle="modal" data-target="#modalGoals">
-          <i class="fas fa-bullseye"></i>
-          <h3>Identifying Educational Goals</h3>
-          <p>The first meeting consists of a comprehensive interview with the student to collect all relevant information regarding
-            their educational goals. </p>
+        <button class="services__tiles" data-toggle="modal" data-target="#modal{{@index}}">
+          <i class="fas {{{this.iconString}}}"></i>
+          <h3>{{this.title}}</h3>
+          <p>{{this.shortDesc}} </p>
           <h6 class="services__tilesLearnMore">Learn more</h6>
         </button>
       </div>
+      {{/each}}
       <div class="col-md-4 mb-3">
-        <button class="services__tiles" data-toggle="modal" data-target="#modalGuide">
-          <i class="fas fa-book-reader"></i>
-          <h3>Guide to Post-Secondary</h3>
-          <p>A second meeting is then booked to review with the student the essential list of resources and supports they should
-            access at their particular school to best support their educational needs. </p>
-          <h6 class="services__tilesLearnMore">Learn more</h6>
-        </button>
-      </div>
-      <div class="col-md-4 mb-3">
-        <button data-toggle="modal" data-target="#modalAdditional" class="services__tiles">
-          <i class="fas fa-hands-helping"></i>
-          <h3>Additional Sessions</h3>
-          <p>Following the second meeting, students can choose to book additional sessions to learn more about particular services
-            and supports that are available to students with disabilities in the post-secondary environment.
-          </p>
-          <h6 class="services__tilesLearnMore">Learn more</h6>
-        </button>
+
+
       </div>
     </div>
-  </div>
 </section>
 
 
@@ -67,11 +52,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2 text-center">
-        <h2>Who am i?</h2>
+        <h2> {{{data.whoAmITitle}}}</h2>
         <img src="/img/trevor.jpg" class="img-circle img-responsive employee-pic mb-3" alt="Trevor Leistmeister" />
         <h5 class="mb-3">Trevor Lesmeister
           <br/>
-          <small class="text-muted ">Vocational Rehabilitation Specialist</small>
+          <small class="text-muted ">{{{data.whoAmIJobDescription}}}</small>
         </h5>
         {{{whoAmIDescription}}}
       </div>
@@ -83,7 +68,7 @@
 <section class="section faq mb-3">
   <a class="anchor" id="faq"></a>
   <div class="container">
-    <h2 class="mb-3">FAQ</h2>
+    <h2 class="mb-3">{{data.faqTitle}}</h2>
     <div class="row">
       <div class="col-md-10">
         <div class="accordion" id="accordionFaq">
@@ -116,28 +101,23 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="modalGoals" tabindex="-1" role="dialog" aria-labelledby="identifyingEducationalGoals" aria-hidden="true">
+{{#each services}}
+<div class="modal fade" id="modal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="identifyingEducationalGoals" aria-hidden="true">
   <div class="modal-dialog modal-md modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="identifyingEducationalGoals">Identifying Educational Goals</h3>
+        <h3 class="modal-title" id="identifyingEducationalGoals">{{this.title}}</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="modal-body">
-        <p class="lead">Particular areas to be explored will include:</p>
-
-        <ul>
-          <li>Area of study </li>
-          <li>School and start date</li>
-          <li>Academic challenges related to their disability</li>
-          <li>Specific concerns and questions they may have about preparing for post-secondary education. </li>
-        </ul>
+        {{{this.longDesc}}}
       </div>
     </div>
   </div>
 </div>
+{{/each}}
 
 <div class="modal fade" id="modalGuide" tabindex="-1" role="dialog" aria-labelledby="modalGuideTitle" aria-hidden="true">
   <div class="modal-dialog modal-md modal-dialog-centered" role="document">
