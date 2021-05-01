@@ -7224,6 +7224,7 @@ a {
 
 .header-section {
   min-height: calc(100vh - 3.5rem);
+  min-height: -webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7337,11 +7338,15 @@ a {
         text-decoration: none; }
         .faq .accordion .card-header button:hover .fa-chevron-right, .faq .accordion .card-header button:focus .fa-chevron-right {
           color: #427C89; }
+      .faq .accordion .card-header button.collapsed .fa-chevron-right {
+        transform: rotate(0deg); }
     .faq .accordion .card-header .fa-chevron-right {
       color: #7A9E9F;
       transition: all 150ms linear;
       margin-right: 0.5rem;
-      margin-top: 0.3125rem; }
+      margin-top: 0.3125rem;
+      transform: rotate(90deg);
+      transition: all 0.3s ease-in-out; }
 
 .who {
   background: #2d2e2e; }

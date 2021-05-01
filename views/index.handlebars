@@ -76,7 +76,7 @@
           <div class="card">
             <div class="card-header" id="heading{{@index}}">
               <h5 class="mb-0">
-                <button class="btn btn-link d-flex" type="button" data-toggle="collapse" data-target="#collapse{{@index}}" aria-expanded="true"
+                <button class="btn btn-link d-flex collapsed" type="button" data-toggle="collapse" data-target="#collapse{{@index}}" aria-expanded="true"
                   aria-controls="collapse{{@index}}">
                   <i class="fas fa-chevron-right"></i>
                   <div>{{this.question}}</div>
@@ -118,88 +118,3 @@
   </div>
 </div>
 {{/each}}
-
-<div class="modal fade" id="modalGuide" tabindex="-1" role="dialog" aria-labelledby="modalGuideTitle" aria-hidden="true">
-  <div class="modal-dialog modal-md modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modalGuideTitle">Guide to Post-Secondary</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">Topics to be covered during the meeting will include:</p>
-
-        <ul>
-          <li>Availability of accessibility services – Where, when, and how to access them.</li>
-          <li>Review of required medical documentation – Do you have everything prepared?</li>
-          <li>Useful student services at the school – What other key resources are available at your school?</li>
-          <li>Recommended timeline for the student as they prepare for the first day of classes – What do you need to do before
-            you start your program? </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="modalAdditional" tabindex="-1" role="dialog" aria-labelledby="modalAdditionalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modalAdditionalTitle">Additional Sessions</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h4>Specialized Funding for Students with Disabilities</h4>
-
-        <p>Did you know that students with disabilities may be eligible for specialized funding? In addition to grants and bursaries,
-          eligible students can also access financial support for additional services and equipment to support their disability
-          related needs during their post-secondary experience.</p>
-        <p>This session reviews all eligibility requirements for such funding, the application process, as well as the necessary
-          timelines that will need to be met to ensure funding is approved and efficiently received.</p>
-
-
-
-        <h4>Assistive Technology at Post-Secondary</h4>
-
-        <p>Disabilities can create particular challenges at school and can impact specific academic responsibilities including
-          reading, writing, math, and time management. Fortunately, there can be easy technological solutions and specialized
-          equipment to help manage some of these more challenging demands. However, a fundamental part of effectively integrating
-          these assistive tools is to identify available options and become familiar with their use before the first day
-          of class. This session examines assistive technology and equipment that are specifically designed to address unique
-          learning styles. The session will also review programs that can provide the equipment free of charge for eligible
-          students.
-        </p>
-
-
-        <h4>Coaching and Advocacy</h4>
-
-        <p>Some students can face particular challenges with organization, time management and feelings of becoming overwhelmed
-          as they are confronted with the pressure and pace of post-secondary school. This can be particularly challenging
-          for students who are transitioning from high school where they were provided with support staff and who assisted
-          them with these particular learning needs. The Coaching and Advocacy session will review the benefits of an Academic
-          Strategist and how they work with students with disabilities to manage the various challenges of studying at higher
-          education. Funding options for such services may also be available and will be reviewed during this session.</p>
-
-
-        <h4>Checklist before the First Day</h4>
-
-        <p>There are simple steps that a student can take to make sure they’re set up for success before the first day of school.
-          This session covers a variety of useful and easy things to do to help a student start classes with confidence.</p>
-
-
-        <h4>Disability at Work – Employment Accommodations</h4>
-
-        <p>What’s the plan after school is complete? Will there be a need for supports or accommodations at the future workplace?
-          Where can a graduate go to access them and how could this impact their job opportunities? This session reviews
-          what accommodations can look like in the work force as well as community resources that help job seekers with disabilities
-          connect with employers.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
