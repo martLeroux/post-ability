@@ -7316,6 +7316,8 @@ a {
 .faq .accordion {
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   border: 0; }
+  .faq .accordion p:last-child {
+    margin-bottom: 0; }
   .faq .accordion .card {
     border: 0;
     border-bottom: 1px solid #ddd; }
@@ -7362,6 +7364,7 @@ footer {
   color: #777777;
   padding: 1rem 0; }
   footer a {
-    color: #777777; }
+    color: #777777;
+    text-decoration: underline; }
     footer a:hover {
       color: #E3E3E3; }

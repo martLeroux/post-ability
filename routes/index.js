@@ -17,7 +17,10 @@ router.get('/', (req, res) => {
         const aboutDescription = data.items[0].fields.aboutDescription;
         const whoAmIDescription = data.items[0].fields.whoAmIDescription;
 
-        const faqContent = dataFaq.items.map((faq) => {
+        const faqContent = dataFaq.items.sort((a, b) => {
+          console.log(a.fields.order);
+          return a.fields.order > b.fields.order ? 1 : -1
+        }).map((faq) => {
           return {
             question: faq.fields.question,
             answer: md.render(faq.fields.answer).body
@@ -32,7 +35,7 @@ router.get('/', (req, res) => {
             iconString: service.fields.iconString,
           }
         });
-        console.log(data.items[0].fields);
+
         res.render('index', {
           title: 'Post-Ability',
           data: data.items[0].fields,
