@@ -7,15 +7,34 @@ body, html {
   background: #fafafa;
 }
 
-@include media-breakpoint-down(sm) { 
-  h1 {
-    font-size: 2.5rem;
-  }
+body {
+  padding-top: 56px;
 
-  h2 {
-    font-size: 2rem;
+  @include media-breakpoint-up(md) { 
+    padding-top: 72px;
   }
 }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+
+  @include media-breakpoint-up(md) { 
+    top: -96px;
+  }
+}
+
+.fixedNavbar {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
 
 .section {
   @extend .py-4;
@@ -87,7 +106,6 @@ a{
   }
 
   h1{
-    text-transform: uppercase;
     font-weight: 600;
   }
 }
