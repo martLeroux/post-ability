@@ -50,7 +50,7 @@
     <div class="row">
       <div class="col-md-8 offset-md-2 text-center">
         <h2> {{{data.whoAmITitle}}}</h2>
-        <img src="/img/trevor.jpg" class="img-circle img-responsive employee-pic mb-3" alt="Trevor Leistmeister" />
+        <img src="/img/trevor.jpg" width="152" class="img-circle img-responsive employee-pic mb-3" alt="Trevor Leistmeister" />
         <h5 class="mb-3">Trevor Lesmeister
           <br/>
           <small class="text-muted ">{{{data.whoAmIJobDescription}}}</small>
@@ -99,11 +99,11 @@
 
 <!-- Modal -->
 {{#each services}}
-<div class="modal fade" id="modal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="identifyingEducationalGoals" aria-hidden="true">
+<div class="modal fade" id="modal{{@index}}" tabindex="-1" role="dialog" aria-labelledby="modalTitle{{@index}}" aria-hidden="true">
   <div class="modal-dialog modal-md modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="identifyingEducationalGoals">{{this.title}}</h3>
+        <h3 class="modal-title" id="modalTitle{{@index}}">{{this.title}}</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <i class="fas fa-times"></i>
         </button>
