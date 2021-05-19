@@ -29,6 +29,7 @@ app.engine('handlebars', exphbs({
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'handlebars');
 
+app.enable('trust proxy')
 app.use((request, res, next) => {
     if (app.get('env') !== 'development' && !request.secure) {
         return response.redirect("https://" + request.headers.host + request.url);
