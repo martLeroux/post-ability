@@ -32,7 +32,7 @@ app.set('view engine', 'handlebars');
 app.enable('trust proxy')
 app.use((request, res, next) => {
     if (app.get('env') !== 'development' && !request.secure) {
-        return response.redirect("https://" + request.headers.host + request.url);
+        return res.redirect("https://" + request.headers.host + request.url);
     }
 
     next();
